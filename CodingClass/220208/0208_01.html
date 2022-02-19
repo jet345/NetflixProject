@@ -1,47 +1,74 @@
 <!DOCTYPE html>
+
 <html>
-    <header>
+    <head>
         <style>
-            body{
-                display : flex;
-                justify-content: center;
+            body {
+                height : 100vh;
+                display: flex;
                 flex-direction: column;
+                justify-content : center;
                 align-items: center;
-                height: 100vh;
             }
 
-            header{
-                width:100%;
-                height:10vh;
-                text-align: center;
+            header {
+                height : 10vh;
+                width : 100%;
+                border-bottom : 1px solid red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
-
-            footer{
-                width:100%;
-                text-align: center;
+            footer {
+                height : 10vh;
+                width : 100%;
+                border-top : 1px solid red;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
-
+          .content{
+            display:flex;
+            justify-content: center;
+          }
+          .content > nav{
+            border-right : 1px solid red;
+            width : 25%;
+          }
+          .content > aside{
+            border-left : 1px solid red;
+            width :25%;
+          }
+          .content > main{
+            width : 100%;
+          }
         </style>
-    </header>
+    </head>
     <body>
-        
         <header>
             헤더
         </header>
-        <div class = "content">
-            <nav>
-                왼쪽사이드
+        <div class="content">
+            <nav> 왼쪽 사이드
+              <li>
+                home
+              </li>
+              <li>
+                메뉴1번
+              </li>
+              <li>
+                메뉴2번
+              </li>
+              <li>
+                메뉴3번
+              </li>
+          
             </nav>
-            <main>
-                중앙ㅇㅇajdkaldjfksajfklsdfdalkdafljl
-            </main>
-            <aside>
-                오른쪽사이드
-            </aside>
+            <main> 중앙중앙중앙중앙중앙중앙중앙중앙중앙중앙중앙중앙중앙중앙중앙중앙중앙중앙 </main>
+            <aside> 오른쪽 사이드 </aside>
         </div>
         <footer>
             푸터
         </footer>
-        
     </body>
 </html>
